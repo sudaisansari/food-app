@@ -82,12 +82,14 @@ export const InfiniteMovingCards = ({
                 )}
             >
                 {productsData.map((product) => (
-                    <ProductCard
-                        id={product.id}
-                        image={product.image}
-                        title={product.title}
-                        price={product.price}
-                    />
+                    <div key={product.id}>
+                        <ProductCard
+                            id={product.id}
+                            image={product.image}
+                            title={product.title}
+                            price={product.price}
+                        />
+                    </div>
                 ))}
             </ul>
         </div>
