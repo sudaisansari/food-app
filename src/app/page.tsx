@@ -1,7 +1,7 @@
-import Services from "@/components/widgets/Services";
 import Hero from "@/components/widgets/Hero";
 import { InfiniteMovingCardsDemo } from "@/components/widgets/ServicesMoving";
 import DealsandSig from "@/components/widgets/DealsandSig";
+import { GetInTouch } from "@/components/widgets/GetInTouch";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
     <Hero />
     <InfiniteMovingCardsDemo />
     <DealsandSig />
+    <GetInTouch />
    </main>
   )
 }
