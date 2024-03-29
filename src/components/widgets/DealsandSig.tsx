@@ -31,7 +31,7 @@ const DealsandSig = () => {
                 {/* Signature And Deals */}
                 <div className='flex flex-col md:flex-row'>
                     {/* Signature Left Side  */}
-                    <div className="h-[30rem] mt-16 items-center md:w-1/2 rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] justify-center relative overflow-hidden">
+                    <div className="h-[30rem] mt-16 mx-2 items-center md:w-1/2 rounded-md flex flex-col antialiased  dark:bg-black dark:bg-grid-white/[0.05] justify-center relative overflow-hidden">
                         <InfiniteMovingCards
                             direction="right"
                             speed="slow"
