@@ -59,7 +59,7 @@ const Header = () => {
 
 
                 {isMenuOpen && (
-                    <div className={`md:hidden  rounded-md pb-4 bg-[#1C1816] text-center mt-4 transition-all duration-500 ease-in-out ${isMenuOpen ? 'h-auto' : 'h-0 overflow-hidden'}`}>
+                    <div className={`lg:hidden  rounded-md pb-4 bg-[#1C1816] text-center mt-4 transition-all duration-500 ease-in-out ${isMenuOpen ? 'h-auto' : 'h-0 overflow-hidden'}`}>
 
                         <div className='flex flex-col pt-4 justify-center space-y-4'>
                             <Link href={"/"} passHref>
@@ -72,9 +72,10 @@ const Header = () => {
                                 <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>About Us</button>
                             </Link>
                         </div>
-                        <div className=''>
-                            <Image src="/Logo.png" alt="Logo" width={200} height={100} className="h-28 mx-12 " />
+                        <div className='flex items-center justify-center'>
+                            <Image src="/Logo.png" alt="Logo" width={200} height={100} className="h-28" />
                         </div>
+
                     </div>
                 )}
 
