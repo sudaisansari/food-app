@@ -56,20 +56,29 @@ const Header = () => {
                         </Button>
                     </div>
                 </div>
-                {/* Mobile Menu */}
+
+
                 {isMenuOpen && (
-                    <div className={`md:hidden rounded-md pb-4 pt-4 flex flex-col justify-center bg-[#1C1816] text-center mt-4 space-y-4 transition-all duration-500 ease-in-out ${isMenuOpen ? 'h-auto' : 'h-0 overflow-hidden'}`}>
-                        <Link href={"/"} passHref>
-                            <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>Home</button>
-                        </Link>
-                        <Link href={"/menu"} passHref>
-                            <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>Menu</button>
-                        </Link>
-                        <Link href={"/about"} passHref>
-                            <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>About Us</button>
-                        </Link>
+                    <div className={`md:hidden  rounded-md pb-4 bg-[#1C1816] text-center mt-4 transition-all duration-500 ease-in-out ${isMenuOpen ? 'h-auto' : 'h-0 overflow-hidden'}`}>
+
+                        <div className='flex flex-col pt-4 justify-center space-y-4'>
+                            <Link href={"/"} passHref>
+                                <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>Home</button>
+                            </Link>
+                            <Link href={"/menu"} passHref>
+                                <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>Menu</button>
+                            </Link>
+                            <Link href={"/about"} passHref>
+                                <button className='font-sans text-2xl hover:text-[#EA002A] font-semibold' onClick={closeMenu}>About Us</button>
+                            </Link>
+                        </div>
+                        <div className=''>
+                            <Image src="/Logo.png" alt="Logo" width={200} height={100} className="h-28 mx-12 " />
+                        </div>
                     </div>
                 )}
+
+
             </Wrapper>
         </header>
     );
